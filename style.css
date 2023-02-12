@@ -19,7 +19,8 @@ body{
     justify-items: center;
     padding: 30px;
     gap: 10px;
-    width: 60%;
+    width: 400px;
+    max-width: calc(100%-20px);
     background-color: #E7F6F2;
     border-radius: 20px;
     margin-left: auto;
