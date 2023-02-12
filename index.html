@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <header>
+        <i class="fi fi-rr-cloud"></i>
+        <span class="header_text">Weather</span>
+    </header>
+    <section class="widget">
+        <div class="widget__input__city">
+            <img src="images/search.png" alt="search">
+            <input class="widget__input" type="text" name="input" placeholder="Type your city" id="">
+            <button class="btn" type="submit">Search</button>
+        </div>
+        <div class="not-found">
+            <img src="images/no-results.png" alt="Not found">
+            <p>Ooops, city not found</p>
+        </div>
+        <div class="widget__weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fi fi-rr-humidity"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fi fi-rr-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

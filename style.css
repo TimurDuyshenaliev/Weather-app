@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+header{
+    text-align: center;
+    height: 150px;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    background-color: #A5C9CA;
+    color: #2C3333;
+    
+}
+.widget{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 30px;
+    gap: 10px;
+    width: 60%;
+    background-color: #E7F6F2;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.widget__input__city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+.widget__input__city > input{
+    background-color: rgba(51, 51, 51, 0.05);
+    border-radius: 8px;
+    border-width: 0;
+    color: #2C3333;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: start;
+    transition: all 200ms;
+    vertical-align: baseline;
+}
+.widget__input__city > button{
+    background-color: rgba(51, 51, 51, 0.05);
+    border-radius: 8px;
+    border-width: 0;
+    color: #2C3333;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.widget__input__city > button:hover{
+    color: #c7e1e2;
+    background-color: #395B64;
+}
+.widget__input__city > img{
+    height: 20px;
+    width: 20px;
+}
+.widget__weather-box{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.widget__weather-box > img{
+    width: 50px;
+    padding-bottom: 30px;
+}
+
+.not-found{
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    height: 200px;
+    padding: 20px;
+}
+.not-found > img{
+    width: 50px;
+    padding-bottom: 30px;
+}
+.weather-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text{
+    padding-left: 13px;
+}
+.humidity{
+    display: flex;
+    flex-direction: row;
+}
+.wind{
+    display: flex;
+    flex-direction: row;
+}
