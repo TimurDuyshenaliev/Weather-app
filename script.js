@@ -5,7 +5,10 @@ const error = document.querySelector('.not-found');
 
 search.addEventListener('click', ()=>{
     const apiKey = '508a9c55df5975950059d529511660b6';
-    const city = document.querySelector('.widget__input').value;
+    function capitalizeFirstLetter(value) {
+        return value.charAt(0).toUpperCase() + value.slice(1);
+    }
+    const city = capitalizeFirstLetter(document.querySelector('.widget__input').value)
     console.log(city);
     if(city === ''){
         return;
@@ -26,6 +29,7 @@ search.addEventListener('click', ()=>{
             error.style.display = 'none';
             error.classList.remove('fadeIn');
 
+            const city = document.querySelector('.widget__weather-box .city');
             const image = document.querySelector('.widget__weather-box img');
             const temperature = document.querySelector('.widget__weather-box .temperature');
             const description = document.querySelector('.widget__weather-box .description');
@@ -56,10 +60,12 @@ search.addEventListener('click', ()=>{
                 default:
                     image.src = '';
             }
+            city.innerHTML = `${json.name}`;
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+            
 
             weatherWidget.style.display = '';
             weatherDetails.style.display = '';

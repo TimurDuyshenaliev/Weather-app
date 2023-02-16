@@ -87,7 +87,9 @@ body{
     width: 50px;
     padding-bottom: 30px;
 }
-
+.widget__weather-box .city{
+    padding-bottom: 25px;
+}
 .not-found{
     font-weight: 600;
     font-size: 1.6rem;
